@@ -37,9 +37,9 @@ function update(firstName, lastName, mail) {
   })
 }
 
-function getData() {
-  var fetchedData
-  contactRef.on('value', (data) => {
+async function getData() {
+  var fetchedData;
+   await contactRef.on('value', (data) => {
     fetchedData = data.val()
   })
   var array = [fetchedData]

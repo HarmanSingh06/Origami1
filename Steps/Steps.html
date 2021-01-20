@@ -4,7 +4,9 @@
 <TITLE>Step By Step Tutorials</TITLE>
 
 <link href = "../Light.css" rel = "stylesheet" type = "text/css">
+
 <div id = "header3" class = "header3">
+  <input oninput =  type = "text" placeholder = "search" id = "searchFilter" onKeyUp = "search();">
     <style type = "text/css">
         .nav a{transition-property:all;}
         .nav a{transition-duration:0.2s}
@@ -28,36 +30,50 @@
 
 <div class = "grid">
     
-    <div class = "origami raise camel">
+  <ul id = "list">
+
+    <div class = "">
+    <ol>
     <h3>Camel</h3>
     <A href = "../Steps/Animals/camel.html"><img src = "../Assets/camel.png" width = "150", height = "150"/></A>
+    </ol>
     </div>
     
-    <div class = "origami raise chameleon">
+    <div class = "">
+    <ol>
     <h3>Chameleon</h3>
     <img src = "../Assets/chameleon.png" width = "150", height = "150"/>
+    </ol>
     </div>
     
-    <div class = "origami raise cicada">
+    <div class = "">
+      <ol>
     <h3>Cicada</h3>
     <img src = "../Assets/cicada.png" width = "150", height = "150"/>
+    </ol>
     </div>
     
-    <div class = "origami raise panda">
+    <div class = "">
+      <ol>
     <h3>Panda</h3>
     <img src = "../Assets/panda.png" width = "150", height = "150"/>
+    </ol>
     </div>
     
-    <div class = "origami raise pigeon">
+    <div class = "">
+      <ol>
     <h3>Pigeon</h3>
     <img src = "../Assets/pigeon.png" width = "150", height = "150"/>
-    </div>
+  </ol>  
+  </div>
     
-    <div class = "origami raise teddy">
+    <div class = "">
+      <ol>
     <h3>Teddy</h3>
     <img src = "../Assets/teddy.png" width = "150", height = "150"/>
+    </ol>
     </div>
-
+</ul>
 </div>
 
 <div class="footer">
@@ -99,6 +115,6 @@
     <div class = "color">This Text Will not be seen in website</div>
 </div>
 </div>
-
+<script src="../searchEngine.js"></script>
 </BODY>
 

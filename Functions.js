@@ -39,13 +39,12 @@ function tutorials() {
     document.getElementById("tutorials").style.transitionProperty = "all";
     document.getElementById("tutorials").style.transitionDuration = "0.4s";
     document.getElementById("tutorials").style.opacity = "1";
-    document.getElementById("tutorials").style.transform = "translate(0px,100px)";
+    document.getElementById("tutorials").style.transform = "translate(0px,200px)";
   }
   else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
     document.getElementById("tutorials").style.transitionProperty = "all";
     document.getElementById("tutorials").style.transitionDuration = "0.4s";
     document.getElementById("tutorials").style.opacity = "0";
-    document.getElementById("tutorials").style.transform = "translate(0px,0px)";
   }
 }
 function fold() {
