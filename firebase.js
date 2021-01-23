@@ -40,8 +40,10 @@ function update(firstName, lastName, mail) {
 async function getData() {
   var fetchedData;
    await contactRef.on('value', (data) => {
+     console.log(data.toString())
     fetchedData = data.val()
-  })
+  });
+
   var array = [fetchedData]
-  console.log(array)
+    var str = array.toString();
 }
