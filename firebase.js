@@ -12,11 +12,15 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var contactRef = firebase.database().ref('contactInfo');
 
+
+
+//This function just makes my work easier by getting the element just ID
 function getInputVal(id) {
   return document.getElementById(id).value;
 }
 document.getElementById('contact').addEventListener('submit', submitForm)
 
+//This functiion is responsible for  getting the data from the user
 function submitForm(data) {
   data.preventDefault();
 
@@ -28,8 +32,10 @@ function submitForm(data) {
   getData();
 }
 function update(firstName, lastName, mail) {
+  //This creates the unique ID
   contactRef1 = contactRef.push();
 
+  //creating field and setting the data
   contactRef1.set({
     "mail": mail,
     "firstName": firstName,
@@ -37,6 +43,7 @@ function update(firstName, lastName, mail) {
   })
 }
 
+//This function is responsible for fetching the data from firebase
 async function getData() {
   var fetchedData;
    await contactRef.on('value', (data) => {
