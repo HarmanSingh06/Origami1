@@ -677,5 +677,11 @@ effect 3
 .header2:hover{
   background-color:rgba(0,0,0,.3);
 }
-
+.input{
+  float:right;
+  margin-right:3%;
+  font-family:Monsterrat;
+  padding-left:2%;
+  padding-right:2%;
+}
 

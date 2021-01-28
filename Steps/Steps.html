@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <script src = "../Functions.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Monsterrat" rel="stylesheet">
 <TITLE>Step By Step Tutorials</TITLE>
 
 <link href = "../Light.css" rel = "stylesheet" type = "text/css">
-
+<HEAD>
 <div id = "header3" class = "header3">
-  <input oninput =  type = "text" placeholder = "search" id = "searchFilter" onKeyUp = "search();">
-    <style type = "text/css">
-        .nav a{transition-property:all;}
-        .nav a{transition-duration:0.2s}
-            .nav a {text-decoration: none;}
-            .nav a:hover {text-decoration:overline;}
-    </style>
-<div class = "nav">
-<A href = "#" onClick = "scrollAbout();">ABOUT</A> |
-<A href = "#" onClick = "scrollFolding();">START FOLDING</A> |
-<A href = "#" onClick = "scrollContact();">CONTACT</A>
+  <style type="text/css">
+    .nav{
+        float:left;
+        margin-right:5%;
+        margin-left:20%
+    }
+    .nav a {
+        transition-property: all;
+    }
+
+    .nav a {
+        transition-duration: 0.1s;
+    }
+
+    .nav a {
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        text-decoration: overline;
+    
+    }
+</style>
+<Text id = "logo" style = "float:left;font-size:200%;color:white;padding-bottom:2%;margin-top:-1%;margin-left:2%">Origami.me</Text>
+<div class="nav">
+    <A href="#" onClick="scrollAbout();">ABOUT</A> |
+    <A href="#" onClick="scrollFolding();">START FOLDING</A> |
+    <A href="#" onClick="scrollContact();">CONTACT</A>
 </div>
 
+<input oninput =  type = "text" placeholder = "Search" id = "searchFilter" onKeyUp = "search();" class = "input">
 </HEAD>
 
 </div>
+
 <div class="header2">
     Step By Step Tutorials
     </div>
     </div>
-<BODY>
+<BODY onLoad = "classAdder()">
 
 <div class = "grid">
     
@@ -75,7 +95,8 @@
     </div>
 </ul>
 </div>
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player id = "searchResult"src="https://assets7.lottiefiles.com/packages/lf20_aBYmBC.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; opacity:0"  autoplay></lottie-player>
 <div class="footer">
 
     <div class="logos">

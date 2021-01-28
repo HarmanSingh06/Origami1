@@ -2,6 +2,7 @@
 <link id='theme' href="Light.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monsterrat" rel="stylesheet">
 <TITLE>Welcome</TITLE>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="whole">
@@ -9,6 +10,10 @@
     <HEAD>
         <div id="header3" class="header3">
             <style type="text/css">
+                .nav{
+                    float:right;
+                    margin-right:5%;
+                }
                 .nav a {
                     transition-property: all;
                 }
@@ -23,9 +28,10 @@
 
                 .nav a:hover {
                     text-decoration: overline;
+                
                 }
             </style>
-            
+            <Text id = "logo" style = "float:left;font-size:200%;color:white;padding-bottom:2%;margin-top:-1%;margin-left:2%">Origami.me</Text>
             <div class="nav">
                 <A href="#" onClick="scrollAbout();">ABOUT</A> |
                 <A href="#" onClick="scrollFolding();">START FOLDING</A> |
@@ -54,7 +60,7 @@
 </div>
 -->
 
-<BODY>
+<BODY onload = "getData()">
     <div class="whole">
         <div class="origami">
             <text style="font-size:40px;">About</text>
@@ -128,13 +134,12 @@
         <button class = "button" type = 'submit'>Submit</button>
     </form>
 
-        <Text class='copyright'>&#169 Harman Singh</Text>
+        <Text class='copyright'>&#169 Harman Singh </Text>
         <div class = "color">This Text Will not be seen in website</div>
     </div>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
 
 <script src="Functions.js"></script>
 <script src="firebase.js"></script>

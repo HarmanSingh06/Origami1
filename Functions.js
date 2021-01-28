@@ -3,21 +3,25 @@ window.onscroll = function () { headerOpacity(), tutorials() };
 function headerOpacity() {
   if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     document.getElementById("header3").style.position = "fixed";
-    document.getElementById("header3").style.paddingTop = "0.9%";
-    document.getElementById("header3").style.paddingBottom = "0%";
     document.getElementById("header3").style.backgroundColor = "rgba(0,0,0,1)";
-    //  document.getElementById("header2").style.opacity = "70%"
     document.getElementById("header3").style.color = "#ffffff";
   }
   if (document.body.scrollTop < 600 && document.documentElement.scrollTop < 600) {
     //document.getElementById("header2").style.opacity = "1"
     document.getElementById("header3").style.transitionProperty = "all";
     document.getElementById("header3").style.transitionDuration = "0.4s";
-    document.getElementById("header3").style.paddingTop = "1%";
-    document.getElementById("header3").style.paddingBottom = "1%";
+    document.getElementById("logo").style.transitionProperty = "all";
+    document.getElementById("logo").style.transitionDuration = "0.4s";
     document.getElementById("header3").style.backgroundColor = "rgba(0,0,0,.4)";
     document.getElementById("header3").style.color = "#db0d29";
     document.getElementById("header3").style.position = "absolute";
+  }
+}
+function classAdder(){
+  ul = document.getElementById("list");
+  li = ul.getElementsByTagName("ol");
+  for(var i=0; i< li.length; i++){
+    li[i].classList.add("origami");
   }
 }
 function scrollAbout() {
@@ -59,7 +63,6 @@ function fold() {
     document.getElementById("tutorials").style.transform = "translate(0px,0px)";
   }
 }
-
 function Video() {
   window.location.href = "./Steps/Steps.html";
 }
