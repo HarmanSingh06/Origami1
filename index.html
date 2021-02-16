@@ -10,10 +10,11 @@
     <HEAD>
         <div id="header3" class="header3">
             <style type="text/css">
-                .nav{
-                    float:right;
-                    margin-right:5%;
+                .nav {
+                    float: right;
+                    margin-right: 5%;
                 }
+
                 .nav a {
                     transition-property: all;
                 }
@@ -28,19 +29,20 @@
 
                 .nav a:hover {
                     text-decoration: overline;
-                
+
                 }
             </style>
-            <Text id = "logo" style = "float:left;font-size:200%;color:white;padding-bottom:2%;margin-top:-1%;margin-left:2%">Origami.me</Text>
+            <Text id="logo"
+                style="float:left;font-size:200%;color:white;padding-bottom:2%;margin-top:-1%;margin-left:2%">Origami.me</Text>
             <div class="nav">
                 <A href="#" onClick="scrollAbout();">ABOUT</A> |
                 <A href="#" onClick="scrollFolding();">START FOLDING</A> |
                 <A href="#" onClick="scrollContact();">CONTACT</A>
             </div>
-            
+
             <label class="switch">
-                <input type = "checkbox" onClick = "toggleTheme();">
-                <span class = "slider round"></span>
+                <input type="checkbox" onClick="toggleTheme();">
+                <span class="slider round"></span>
             </label>
     </HEAD>
 
@@ -54,15 +56,15 @@
     </div>
 </div>
 <!---<div id = "header2" class = "header2">
-    <Text style = "font-size:70px;"><CENTER>Welcome to the Origami World</CENTER></Text>
-    <CENTER><Text style = "font-size:18px;letter-spacing:1px;">By <A style = "color:#0093e8">Harman Singh</A></Text></CENTER>
+        <Text style = "font-size:70px;"><CENTER>Welcome to the Origami World</CENTER></Text>
+        <CENTER><Text style = "font-size:18px;letter-spacing:1px;">By <A style = "color:#0093e8">Harman Singh</A></Text></CENTER>
     </div>
 </div>
 -->
 
-<BODY onload = "getData()">
+<BODY onload="getData()">
     <div class="whole">
-        <div class="origami">
+        <div id="origami" class="origami">
             <text style="font-size:40px;">About</text>
             Hello! Welcome to the Origami World
             Our goal is to show more people how to make origami while helping them improve their skills and promoting
@@ -73,7 +75,7 @@
             variety of very talented artists, we also have a collection of book reviews and recommendations plus much
             more!
         </div>
-        <div class="origami">
+        <div id="origami1" class="origami">
             <p><text style="font-size:40px;">Origami</text>, from ori meaning "folding", and kami meaning "paper" (kami
                 changes to gami due
                 to rendaku)) is the art of paper folding, which is often associated with Japanese culture. In modern
@@ -87,14 +89,15 @@
                 designs which use cuts.</p>
         </div>
 
-        <div class="folding">
+        <div id="origami2" class="folding">
+
             <div id="fold" class="origami child">
                 <CENTER><Text style="font-size:40px;">Start Folding</Text></CENTER>
-            </div>
 
-            <div id='tutorials' class="btns">
-                <a href="Steps/Steps.html" class="btn btn4 btn1">Video Tutorials</a>
-                <a href="#" class="btn btn4 btn2">Step By Step Tutorials</a>
+                <div id='tutorials' style="float:right" class="btns">
+                    <a href="Steps/Steps.html" class="btn btn4 btn1">Step By Step Tutorials</a>
+                    <a href="#" class="btn btn4 btn2">Video Tutorials</a>
+                </div>
             </div>
         </div>
     </div>
@@ -109,38 +112,38 @@
     <div class="footer">
         <div>
         </div>
-        <form id = 'contact' class="form__group">
-        <div class="page">
-            <label class="field field_v1">
-              <input id = "firstName" class="field__input" placeholder="e.g. Harman">
-              <span class="field__label-wrap">
-                <span class="field__label">First name</span>
-              </span>
-            </label>
-            <label class="field field_v2">
-              <input id = "lastName" class="field__input" placeholder="e.g. Singh">
-              <span class="field__label-wrap">
-                <span class="field__label">Last name</span>
-              </span>
-            </label>    
-            <label class="field field_v3">
-              <input id = "mail" class="field__input" placeholder="e.g. example@example.com">
-              <span class="field__label-wrap">
-                <span class="field__label">E-mail</span>
-              </span>
-            </label>
-          </div>
-          
-        <button class = "button" type = 'submit'>Submit</button>
-    </form>
+        <form id='contact' class="form__group">
+            <div class="page">
+                <label class="field field_v1">
+                    <input id="firstName" class="field__input" placeholder="e.g. Harman" required>
+                    <span class="field__label-wrap">
+                        <span class="field__label">First name</span>
+                    </span>
+                </label>
+                <label class="field field_v2">
+                    <input id="lastName" class="field__input" placeholder="e.g. Singh" required>
+                    <span class="field__label-wrap">
+                        <span class="field__label">Last name</span>
+                    </span>
+                </label>
+                <label class="field field_v3">
+                    <input id="mail" class="field__input" placeholder="e.g. example@example.com" required>
+                    <span class="field__label-wrap">
+                        <span class="field__label">E-mail</span>
+                    </span>
+                </label>
+            </div>
+
+            <button class="button" aling = "center" type='submit'>Submit</button>
+        </form>
 
         <Text class='copyright'>&#169 Harman Singh </Text>
-        <div class = "color">This Text Will not be seen in website</div>
+        <div class="color">This Text Will not be seen in website</div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
 
-<script src="Functions.js"></script>
-<script src="firebase.js"></script>
+    <script src="Functions.js"></script>
+    <script src="firebase.js"></script>
 </BODY>

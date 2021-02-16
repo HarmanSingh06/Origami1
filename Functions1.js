@@ -43,8 +43,13 @@ function tutorials() {
 }
 
 function Video() {
-
+var bool = true
+if(bool){
   window.location.href = "./Steps/Steps.html";
+}  
+  else{
+    //...now what will you do 
+  }
 }
 
 

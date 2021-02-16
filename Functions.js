@@ -1,12 +1,14 @@
 
 window.onscroll = function () { headerOpacity(), tutorials() };
 function headerOpacity() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     document.getElementById("header3").style.position = "fixed";
     document.getElementById("header3").style.backgroundColor = "rgba(0,0,0,1)";
     document.getElementById("header3").style.color = "#ffffff";
+    document.getElementById("origami").style.transform = "translate(0px,100px)";
+    document.getElementById("origami1").style.transform = "translate(0px,100px)";
   }
-  if (document.body.scrollTop < 600 && document.documentElement.scrollTop < 600) {
+  if (document.body.scrollTop < 500 && document.documentElement.scrollTop < 500) {
     //document.getElementById("header2").style.opacity = "1"
     document.getElementById("header3").style.transitionProperty = "all";
     document.getElementById("header3").style.transitionDuration = "0.4s";
@@ -39,11 +41,14 @@ function scrollContact() {
   }
 }
 function tutorials() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     document.getElementById("tutorials").style.transitionProperty = "all";
     document.getElementById("tutorials").style.transitionDuration = "0.4s";
     document.getElementById("tutorials").style.opacity = "1";
     document.getElementById("tutorials").style.transform = "translate(0px,200px)";
+    document.getElementById("anime1").style.transitionProperty = "all";
+    document.getElementById("anime1").style.transitionDuration = "0.4s";
+    document.getElementById("anime1").style.transform = "translate(0px,400px)";
   }
   else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
     document.getElementById("tutorials").style.transitionProperty = "all";
@@ -55,7 +60,7 @@ function fold() {
   if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
     document.getElementById("fold").style.transitionProperty = "all";
     document.getElementById("fold").style.transitionDuration = "0.4s";
-    document.getElementById("fold").style.transform = "translate(0px,100px)";
+    document.getElementById("fold").style.transform = "translate(0px,-100px)";
   }
   else if (document.body.scrollTop < 700 || document.documentElement.scrollTop < 700) {
     document.getElementById("tutorials").style.transitionProperty = "all";
