@@ -24,7 +24,7 @@ document.getElementById('contact').addEventListener('submit', submitForm)
 //This functiion is responsible for  getting the data from the user
 function submitForm(data) {
   data.preventDefault();
-
+  
   var mail = getInputVal("mail");
   var firstName = getInputVal("firstName");
   var lastName = getInputVal("lastName");
